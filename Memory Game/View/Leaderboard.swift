@@ -16,9 +16,9 @@ struct Leaderboard: View {
     }
     
     private var highscores = [
-        Score(name: "Will", score: 200),
-        Score(name: "Will", score: 190),
-        Score(name: "Holl", score: 180)
+        Scores(name: "Will", score: 200),
+        Scores(name: "Will", score: 190),
+        Scores(name: "Holl", score: 180)
     ]
     
     var body: some View {
