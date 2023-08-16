@@ -7,12 +7,10 @@
 
 import Foundation
 
-struct Score: Codable {
-    var scores: [ScoreElement]
-}
-
-struct ScoreElement: Codable {
+// MARK: - Score
+struct Score: Identifiable, Codable {
     var id: Int
     var name: String
-    var point: Int
+    var points: Int
 }
+

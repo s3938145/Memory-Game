@@ -28,13 +28,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             
+            //MARK: - App Icon
             ZStack {
                 Image("poker-cards")
                     .resizable()
                     .frame(width: 350, height: 350)
                 
+                //MARK: - Main Menu
                 VStack(spacing: 60) {
-
+                    //MARK: - Dark Mode Toggle
                     HStack {
                         Button(action: self.toggleColorScheme) {
                             if(theColorScheme == .light) {
@@ -55,30 +57,40 @@ struct ContentView: View {
                     }
                     .padding(.bottom, 60)
                     
+                    //MARK: - App Name
                     Text("Memory Match")
                         .font(.system(size: 50, weight: .bold))
                         .italic()
                         .frame(maxWidth: .infinity)
                         .background(Color(.gray).opacity(0.7))
                 
+                    //MARK: - Play Button
                     NavigationLink(destination: Text("Game View")) {
                         Text("Play")
                             .font(.system(size: 35))
                     }
                     .buttonStyle(MenuButton())
                     
-                    NavigationLink(destination: Text("Highscore View")) {
+                    //MARK: - Leaderboard Button
+                    NavigationLink(destination: Leaderboard()) {
                         Text("Leaderboard")
                             .font(.system(size: 35))
                     }
                     .buttonStyle(MenuButton())
                     
+                    //MARK: - How To Play Button
                     NavigationLink(destination: Text("How To")) {
                         Text("How To")
                             .font(.system(size: 35))
                     }
                     .buttonStyle(MenuButton())
                     
+                    //MARK: - Settings Button
+                    NavigationLink(destination: Text("Settings")) {
+                        Text("Settings")
+                            .font(.system(size: 35))
+                    }
+                    .buttonStyle(MenuButton())
                     Spacer()
                 }
             }

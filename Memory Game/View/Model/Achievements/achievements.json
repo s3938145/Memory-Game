@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "image": "achievement1",
+        "name": "Win 1 Game",
+        "description": "Description",
+        "achieved": true
+    },
+    {
+        "id": 2,
+        "image": "achievement2",
+        "name": "Win 2 Games",
+        "description": "Description",
+        "achieved": false
+    }
+]
