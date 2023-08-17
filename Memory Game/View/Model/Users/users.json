@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Will",
+        "gamesPlayed": 14,
+        "winRatio": 0.9,
+        "achievements": [
+            "Easy Peasy",
+            "Premium Medium"
+        ],
+        "highestScore": 200
+    },
+    {
+        "id": 2,
+        "name": "Holly",
+        "gamesPlayed": 20,
+        "winRatio": 0.7,
+        "achievements": [
+            "Easy Peasy"
+        ],
+        "highestScore": 130
+    }
+]

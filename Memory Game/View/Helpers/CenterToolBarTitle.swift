@@ -23,3 +23,19 @@ struct CenterToolBarTitle: ViewModifier {
             }
     }
 }
+
+struct CenterToolBarTitleAchievement: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        Text("Achievements")
+                            .font(.system(size: 40))
+                            .padding(.top, 20)
+                    }
+                }
+            }
+    }
+}
