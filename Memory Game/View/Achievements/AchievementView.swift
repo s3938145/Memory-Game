@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AchievementView: View {
+    var user: User
     
     var achievedAchievements: [Achievement] {
         return achievements.filter {
@@ -44,6 +45,6 @@ struct AchievementView: View {
 
 struct AchievementView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementView()
+        AchievementView(user: users[0])
     }
 }

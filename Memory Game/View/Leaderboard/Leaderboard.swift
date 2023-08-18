@@ -9,15 +9,19 @@ import SwiftUI
 
 struct Leaderboard: View {
     
-    var sortedScore : [Score] {
-        return scores.sorted(by: {$0.points > $1.points})
+    var sortedUsers : [User] {
+        return users.sorted(by: {$0.highestScore > $1.highestScore})
     }
     
     var body: some View {
         
         NavigationView {
-            List(sortedScore) {score in
-                LeaderboardRow(score: score)
+            List(sortedUsers) {user in
+                NavigationLink {
+                    GameHistoryView(user: user)
+                } label: {
+                    LeaderboardRow(user: user)
+                }
             }
             .modifier(CenterToolBarTitle())
         }

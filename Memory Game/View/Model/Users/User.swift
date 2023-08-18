@@ -9,10 +9,10 @@ import Foundation
 
 // MARK: - User
 struct User: Identifiable, Codable {
-    let id: Int
-    let name: String
-    let gamesPlayed: Int
-    let winRatio: Double
-    let achievements: [String]
-    let highestScore: Int
+    var id: Int
+    var name: String
+    var gamesPlayed: Int
+    var winRatio: Double
+    var achievements: [String]
+    var highestScore: Int
 }

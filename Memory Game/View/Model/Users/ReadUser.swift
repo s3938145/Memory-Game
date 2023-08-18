@@ -1,20 +1,20 @@
 //
-//  ReadScore.swift
+//  ReadUser.swift
 //  Memory Game
 //
-//  Created by Will Ngo on 2023-08-16.
+//  Created by Binh Ngo on 17/08/2023.
 //
 
 import Foundation
 
-var scores = decodeJson(jsonFileName: "scores.json")
+var users = decodeUserJson(jsonFileName: "users.json")
 
-func decodeJson(jsonFileName: String) -> [Score] {
+func decodeUserJson(jsonFileName: String) -> [User] {
     if let file = Bundle.main.url(forResource: jsonFileName, withExtension: nil) {
         if let data = try? Data(contentsOf: file) {
             do {
                 let decoder = JSONDecoder()
-                let decoded = try decoder.decode([Score].self, from: data)
+                let decoded = try decoder.decode([User].self, from: data)
                 return decoded
             } catch let error {
                 fatalError("Failed to decode JSON: \(error)")
@@ -23,5 +23,5 @@ func decodeJson(jsonFileName: String) -> [Score] {
     } else {
         fatalError("Couldn't load \(jsonFileName) file")
     }
-    return [ ] as [Score]
+    return [ ] as [User]
 }

@@ -2,7 +2,7 @@
 //  MainView.swift
 //  Memory Game
 //
-//  Created by Will Ngo on 2023-08-17.
+//  Created by Binh Ngo on 17/08/2023.
 //
 
 import SwiftUI

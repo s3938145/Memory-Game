@@ -10,15 +10,15 @@ import SwiftUI
 struct LeaderboardRow: View {
     
     @Environment(\.colorScheme) var colorScheme
-    var score: Score
+    var user: User
     
     var body: some View {
         
         HStack(alignment: .center, spacing: 10){
             Spacer()
-            Text(score.name)
+            Text(user.name)
             Text("---")
-            Text("\(score.points.description) pt")
+            Text("\(user.highestScore.description) pt")
             Spacer()
         }
         .padding()
@@ -31,9 +31,9 @@ struct LeaderboardRow: View {
 struct LeaderboardRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LeaderboardRow(score: scores[0])
+            LeaderboardRow(user: users[0])
                 .previewLayout(.fixed(width: 200, height: 80))
-            LeaderboardRow(score: scores[1])
+            LeaderboardRow(user: users[1])
                 .previewLayout(.fixed(width: 200, height: 80))
         }
     }
