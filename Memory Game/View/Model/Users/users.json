@@ -5,8 +5,27 @@
         "gamesPlayed": 14,
         "winRatio": 0.9,
         "achievements": [
-            "Easy Peasy",
-            "Premium Medium"
+            {
+                "id": 1,
+                "image": "easy",
+                "name": "Easy Peasy",
+                "description": "Win 1 Game on Easy Difficulty",
+                "achieved": false
+            },
+            {
+                "id": 2,
+                "image": "medium",
+                "name": "Premium Medium",
+                "description": "Win 1 Game on Medium Difficulty",
+                "achieved": true
+            },
+            {
+                "id": 3,
+                "image": "hard",
+                "name": "Hard Earned Victory",
+                "description": "Win 1 Game on Hard Difficulty",
+                "achieved": false
+            }
         ],
         "highestScore": 200
     },
@@ -16,7 +35,27 @@
         "gamesPlayed": 20,
         "winRatio": 0.7,
         "achievements": [
-            "Easy Peasy"
+            {
+                "id": 1,
+                "image": "easy",
+                "name": "Easy Peasy",
+                "description": "Win 1 Game on Easy Difficulty",
+                "achieved": true
+            },
+            {
+                "id": 2,
+                "image": "medium",
+                "name": "Premium Medium",
+                "description": "Win 1 Game on Medium Difficulty",
+                "achieved": false
+            },
+            {
+                "id": 3,
+                "image": "hard",
+                "name": "Hard Earned Victory",
+                "description": "Win 1 Game on Hard Difficulty",
+                "achieved": false
+            }
         ],
         "highestScore": 130
     }

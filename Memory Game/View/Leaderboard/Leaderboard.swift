@@ -14,17 +14,14 @@ struct Leaderboard: View {
     }
     
     var body: some View {
-        
-        NavigationView {
-            List(sortedUsers) {user in
-                NavigationLink {
-                    GameHistoryView(user: user)
-                } label: {
-                    LeaderboardRow(user: user)
-                }
+        List(sortedUsers) {user in
+            NavigationLink {
+                GameHistoryView(user: user)
+            } label: {
+                LeaderboardRow(user: user)
             }
-            .modifier(CenterToolBarTitle())
         }
+        .modifier(CenterToolBarTitle(text: "Leaderboard"))
     }
 }
 

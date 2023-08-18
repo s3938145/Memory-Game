@@ -8,11 +8,18 @@
 import Foundation
 
 // MARK: - User
-struct User: Identifiable, Codable {
-    var id: Int
-    var name: String
-    var gamesPlayed: Int
-    var winRatio: Double
-    var achievements: [String]
-    var highestScore: Int
+struct User: Identifiable, Codable, Hashable {
+    let id: Int
+    let name: String
+    let gamesPlayed: Int
+    let winRatio: Double
+    let achievements: [Achievement]
+    let highestScore: Int
+}
+
+// MARK: - Achievement
+struct Achievement: Identifiable, Codable, Hashable {
+    let id: Int
+    let image, name, description: String
+    let achieved: Bool
 }

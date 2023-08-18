@@ -11,19 +11,20 @@ struct GameHistoryView: View {
     var user: User
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Username: \(user.name)")
-                Text("Games Played: \(user.gamesPlayed.description)")
-                Text("Win Rate: \(user.winRatio.description)")
-                Text("Highest score \(user.highestScore.description)")
+        VStack {
+                Section {
+                    Text("Username: \(user.name)")
+                    Text("Games Played: \(user.gamesPlayed.description)")
+                    Text("Win Rate: \(user.winRatio.description)")
+                    Text("Highest score \(user.highestScore.description)")
+                }
+                .font(.system(size: 25))
+                ScrollView {
+                    AchievementView(user: user.self)
+                }
             }
-            NavigationLink {
-                AchievementView(user: user.self)
-            } label: {
-                Text("Achievements")
-            }
-        }
+            .padding(.top, 180)
+            .modifier(CenterToolBarTitle(text: "Game History"))
     }
 }
 
