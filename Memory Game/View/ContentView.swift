@@ -7,14 +7,8 @@
 
 import SwiftUI
 
-struct MenuButton: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .frame(width: 300, height: 69)
-            .background(Color(red: 0, green: 0.5, blue: 0.5).opacity(0.7))
-            .foregroundStyle(.primary)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-    }
+class Difficulty: ObservableObject {
+    @Published var currentDifficulty = "Easy"
 }
 
 struct ContentView: View {
@@ -67,30 +61,26 @@ struct ContentView: View {
                     //MARK: - Play Button
                     NavigationLink(destination: Text("Game View")) {
                         Text("Play")
-                            .font(.system(size: 35))
                     }
-                    .buttonStyle(MenuButton())
+                    .buttonStyle(MenuButtons())
                     
                     //MARK: - Leaderboard Button
                     NavigationLink(destination: Leaderboard()) {
                         Text("Leaderboard")
-                            .font(.system(size: 35))
                     }
-                    .buttonStyle(MenuButton())
+                    .buttonStyle(MenuButtons())
                     
                     //MARK: - How To Play Button
                     NavigationLink(destination: Text("How To")) {
                         Text("How To")
-                            .font(.system(size: 35))
                     }
-                    .buttonStyle(MenuButton())
+                    .buttonStyle(MenuButtons())
                     
                     //MARK: - Settings Button
-                    NavigationLink(destination: Text("Settings")) {
+                    NavigationLink(destination: SettingsView().environmentObject(Difficulty())) {
                         Text("Settings")
-                            .font(.system(size: 35))
                     }
-                    .buttonStyle(MenuButton())
+                    .buttonStyle(MenuButtons())
                     Spacer()
                 }
             }

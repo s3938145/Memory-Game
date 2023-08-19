@@ -11,7 +11,7 @@ import Foundation
 struct User: Identifiable, Codable, Hashable {
     let id: Int
     let name: String
-    let gamesPlayed: Int
+    let gamesPlayed, wins: Int
     let winRatio: Double
     let achievements: [Achievement]
     let highestScore: Int

@@ -19,6 +19,11 @@
 		E849007B2A8E45D5005FA462 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849007A2A8E45D5005FA462 /* MainView.swift */; };
 		E849007D2A8E4B8E005FA462 /* ReadUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849007C2A8E4B8E005FA462 /* ReadUser.swift */; };
 		E84900802A8E4E89005FA462 /* GameHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849007F2A8E4E89005FA462 /* GameHistoryView.swift */; };
+		E8921D0B2A90D3F1006D1A51 /* HowToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8921D0A2A90D3F1006D1A51 /* HowToView.swift */; };
+		E8A3DD912A905A4100615B15 /* MenuButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3DD902A905A4100615B15 /* MenuButtons.swift */; };
+		E8B46C402A905BE400D46070 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B46C3F2A905BE400D46070 /* SettingsView.swift */; };
+		E8B46C422A90622000D46070 /* DifficultyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B46C412A90622000D46070 /* DifficultyDetailsView.swift */; };
+		E8B46C442A90851200D46070 /* DifficultyButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B46C432A90851200D46070 /* DifficultyButtons.swift */; };
 		F731C80B2A8B163100E22489 /* Memory_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731C80A2A8B163100E22489 /* Memory_GameApp.swift */; };
 		F731C80D2A8B163100E22489 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F731C80C2A8B163100E22489 /* ContentView.swift */; };
 		F731C80F2A8B163300E22489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F731C80E2A8B163300E22489 /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		E849007A2A8E45D5005FA462 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E849007C2A8E4B8E005FA462 /* ReadUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadUser.swift; sourceTree = "<group>"; };
 		E849007F2A8E4E89005FA462 /* GameHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryView.swift; sourceTree = "<group>"; };
+		E8921D0A2A90D3F1006D1A51 /* HowToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToView.swift; sourceTree = "<group>"; };
+		E8A3DD902A905A4100615B15 /* MenuButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtons.swift; sourceTree = "<group>"; };
+		E8B46C3F2A905BE400D46070 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E8B46C412A90622000D46070 /* DifficultyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyDetailsView.swift; sourceTree = "<group>"; };
+		E8B46C432A90851200D46070 /* DifficultyButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyButtons.swift; sourceTree = "<group>"; };
 		F731C8072A8B163100E22489 /* Memory Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F731C80A2A8B163100E22489 /* Memory_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory_GameApp.swift; sourceTree = "<group>"; };
 		F731C80C2A8B163100E22489 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				E1F8C1122A8CF3950014678A /* CenterToolBarTitle.swift */,
+				E8A3DD902A905A4100615B15 /* MenuButtons.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -97,6 +108,7 @@
 		E1F8C1172A8D00B60014678A /* Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
+				E849007E2A8E4E75005FA462 /* Game History */,
 				F731C81D2A8B384800E22489 /* Leaderboard.swift */,
 				E15A34822A8CC8DE003263D9 /* LeaderboardRow.swift */,
 			);
@@ -124,9 +136,28 @@
 		E849007E2A8E4E75005FA462 /* Game History */ = {
 			isa = PBXGroup;
 			children = (
+				E1D2248B2A8DC59B008E60DC /* Achievements */,
 				E849007F2A8E4E89005FA462 /* GameHistoryView.swift */,
 			);
 			path = "Game History";
+			sourceTree = "<group>";
+		};
+		E8921D0C2A90D3FB006D1A51 /* How To */ = {
+			isa = PBXGroup;
+			children = (
+				E8921D0A2A90D3F1006D1A51 /* HowToView.swift */,
+			);
+			path = "How To";
+			sourceTree = "<group>";
+		};
+		E8B46C3E2A905BBC00D46070 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E8B46C3F2A905BE400D46070 /* SettingsView.swift */,
+				E8B46C432A90851200D46070 /* DifficultyButtons.swift */,
+				E8B46C412A90622000D46070 /* DifficultyDetailsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		F731C7FE2A8B163100E22489 = {
@@ -169,8 +200,8 @@
 			children = (
 				E1D224952A8E243B008E60DC /* Example */,
 				F731C80C2A8B163100E22489 /* ContentView.swift */,
-				E849007E2A8E4E75005FA462 /* Game History */,
-				E1D2248B2A8DC59B008E60DC /* Achievements */,
+				E8921D0C2A90D3FB006D1A51 /* How To */,
+				E8B46C3E2A905BBC00D46070 /* Settings */,
 				E1F8C1172A8D00B60014678A /* Leaderboard */,
 				E1F8C1142A8CF4DB0014678A /* Helpers */,
 				E1FB20F72A8C86C700C5D93A /* Model */,
@@ -250,18 +281,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B46C402A905BE400D46070 /* SettingsView.swift in Sources */,
 				F731C80D2A8B163100E22489 /* ContentView.swift in Sources */,
 				E849007B2A8E45D5005FA462 /* MainView.swift in Sources */,
 				E1F8C1132A8CF3950014678A /* CenterToolBarTitle.swift in Sources */,
 				E1D2248D2A8DC5AE008E60DC /* AchievementView.swift in Sources */,
 				F731C81E2A8B384800E22489 /* Leaderboard.swift in Sources */,
+				E8B46C442A90851200D46070 /* DifficultyButtons.swift in Sources */,
 				E84900792A8E456C005FA462 /* ChildView.swift in Sources */,
 				E15A34832A8CC8DE003263D9 /* LeaderboardRow.swift in Sources */,
 				F731C80B2A8B163100E22489 /* Memory_GameApp.swift in Sources */,
+				E8A3DD912A905A4100615B15 /* MenuButtons.swift in Sources */,
+				E8B46C422A90622000D46070 /* DifficultyDetailsView.swift in Sources */,
 				E1F8C11F2A8D0A7D0014678A /* ReadAchievement.swift in Sources */,
 				E84900802A8E4E89005FA462 /* GameHistoryView.swift in Sources */,
 				E849007D2A8E4B8E005FA462 /* ReadUser.swift in Sources */,
 				E1D2248F2A8DCCD3008E60DC /* AchievementRow.swift in Sources */,
+				E8921D0B2A90D3F1006D1A51 /* HowToView.swift in Sources */,
 				E1D224942A8E07D5008E60DC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
