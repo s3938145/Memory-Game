@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Will",
+        "gamesPlayed": 10,
+        "easyWins": 5,
+        "mediumWins": 3,
+        "hardWins": 1,
+        "totalWins": 9,
+        "winRatio": 0.9,
+        "highestScore": 200
+    },
+    {
+        "id": 2,
+        "name": "Holly",
+        "gamesPlayed": 10,
+        "easyWins": 5,
+        "mediumWins": 1,
+        "hardWins": 1,
+        "totalWins": 7,
+        "winRatio": 0.7,
+        "highestScore": 130
+    }
+]

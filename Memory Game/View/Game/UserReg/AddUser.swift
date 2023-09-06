@@ -1,0 +1,68 @@
+//
+//  AddUser.swift
+//  Memory Game
+//
+//  Created by Binh Ngo on 06/09/2023.
+//
+
+import SwiftUI
+
+struct AddUser: View {
+    @State private var showingAlert = false
+    @State private var alertMessage:String = ""
+    @State private var name:String = ""
+    
+    @Binding var show: Bool
+    
+    @StateObject var userVM = UserViewModel()
+    var body: some View {
+        
+        if show {
+            ZStack {
+                Color.gray.opacity(show ? 0.9 : 0.9).edgesIgnoringSafeArea(.all)
+                ZStack {
+                    VStack {
+                        Text("Register")
+                            .fontWeight(.semibold)
+                            .modifier(TextModifier())
+                        HStack {
+                            Text("User Name: ")
+                            TextField("Enter your user name",
+                                      text: $name)
+                        }
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        
+                        Button("Register") {
+                            showingAlert = true
+                            if (userVM.users.contains(where: {$0.name == name})) {
+                                alertMessage = "\(name) already exist"
+                            } else if (name == "") {
+                                alertMessage = "User name must not be empty"
+                            } else {
+                                userVM.addUser(name: name)
+                                alertMessage = ("\(name) registered")
+                                show = false
+                            }
+                        }
+                        .buttonStyle(SubMenuButton())
+                        .padding(7)
+                        .alert(isPresented: $showingAlert, content: {
+                            Alert(
+                                title: Text("Attention!"),
+                                message: Text("\(alertMessage)")
+                            )
+                        })
+                    }.padding()
+                }
+            }
+            .frame(width: 350, height: 200)
+            .cornerRadius(20)
+        }
+    }
+}
+
+struct AddUser_Previews: PreviewProvider {
+    static var previews: some View {
+        AddUser(show: .constant(true))
+    }
+}

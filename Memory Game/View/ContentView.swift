@@ -59,7 +59,7 @@ struct ContentView: View {
                         .background(Color(.gray).opacity(0.7))
                 
                     //MARK: - Play Button
-                    NavigationLink(destination: Text("Game View")) {
+                    NavigationLink(destination: SwitchUser()) {
                         Text("Play")
                     }
                     .buttonStyle(MenuButtons())

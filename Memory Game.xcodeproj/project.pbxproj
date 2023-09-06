@@ -15,12 +15,28 @@
 		E1F8C1132A8CF3950014678A /* CenterToolBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8C1122A8CF3950014678A /* CenterToolBarTitle.swift */; };
 		E1F8C11D2A8D0A4F0014678A /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F8C11C2A8D0A4F0014678A /* achievements.json */; };
 		E1F8C11F2A8D0A7D0014678A /* ReadAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8C11E2A8D0A7D0014678A /* ReadAchievement.swift */; };
-		E84900792A8E456C005FA462 /* ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84900782A8E456C005FA462 /* ChildView.swift */; };
-		E849007B2A8E45D5005FA462 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849007A2A8E45D5005FA462 /* MainView.swift */; };
-		E849007D2A8E4B8E005FA462 /* ReadUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849007C2A8E4B8E005FA462 /* ReadUser.swift */; };
 		E84900802A8E4E89005FA462 /* GameHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849007F2A8E4E89005FA462 /* GameHistoryView.swift */; };
 		E8921D0B2A90D3F1006D1A51 /* HowToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8921D0A2A90D3F1006D1A51 /* HowToView.swift */; };
+		E89AF6F82AA81A6800D3B5AF /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF6F72AA81A6800D3B5AF /* NoItemView.swift */; };
+		E89AF6FC2AA832DC00D3B5AF /* MainTextModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF6FB2AA832DC00D3B5AF /* MainTextModifer.swift */; };
+		E89AF6FE2AA857F300D3B5AF /* AddUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF6FD2AA857F300D3B5AF /* AddUser.swift */; };
+		E89AF7002AA87C6500D3B5AF /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF6FF2AA87C6500D3B5AF /* CardModifier.swift */; };
+		E89AF7032AA87D2600D3B5AF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF7022AA87D2600D3B5AF /* CardView.swift */; };
+		E89AF7062AA87DA300D3B5AF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF7052AA87DA300D3B5AF /* CardModel.swift */; };
+		E89AF7082AA87E1600D3B5AF /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF7072AA87E1600D3B5AF /* Cardify.swift */; };
+		E89AF70B2AA881C500D3B5AF /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF70A2AA881C500D3B5AF /* EndView.swift */; };
+		E89AF70E2AA882DA00D3B5AF /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF70D2AA882DA00D3B5AF /* Grid.swift */; };
+		E89AF7102AA882F400D3B5AF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF70F2AA882F400D3B5AF /* Array.swift */; };
+		E89AF7132AA8833800D3B5AF /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF7122AA8833800D3B5AF /* Pie.swift */; };
+		E89AF7162AA883D400D3B5AF /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF7152AA883D400D3B5AF /* GameViewModel.swift */; };
+		E89AF7192AA88C5600D3B5AF /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF7182AA88C5600D3B5AF /* MusicPlayer.swift */; };
+		E89AF71B2AA88CA100D3B5AF /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF71A2AA88CA100D3B5AF /* Music.swift */; };
 		E8A3DD912A905A4100615B15 /* MenuButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3DD902A905A4100615B15 /* MenuButtons.swift */; };
+		E8B0735F2AA70F80004BE4F6 /* SwitchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B0735E2AA70F80004BE4F6 /* SwitchUser.swift */; };
+		E8B073612AA72066004BE4F6 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B073602AA72066004BE4F6 /* Achievement.swift */; };
+		E8B073632AA7276C004BE4F6 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B073622AA7276C004BE4F6 /* Difficulty.swift */; };
+		E8B073652AA7285D004BE4F6 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B073642AA7285D004BE4F6 /* GameView.swift */; };
+		E8B073682AA751A3004BE4F6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B073672AA751A3004BE4F6 /* UserViewModel.swift */; };
 		E8B46C402A905BE400D46070 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B46C3F2A905BE400D46070 /* SettingsView.swift */; };
 		E8B46C422A90622000D46070 /* DifficultyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B46C412A90622000D46070 /* DifficultyDetailsView.swift */; };
 		E8B46C442A90851200D46070 /* DifficultyButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B46C432A90851200D46070 /* DifficultyButtons.swift */; };
@@ -40,12 +56,28 @@
 		E1F8C1122A8CF3950014678A /* CenterToolBarTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterToolBarTitle.swift; sourceTree = "<group>"; };
 		E1F8C11C2A8D0A4F0014678A /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
 		E1F8C11E2A8D0A7D0014678A /* ReadAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAchievement.swift; sourceTree = "<group>"; };
-		E84900782A8E456C005FA462 /* ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildView.swift; sourceTree = "<group>"; };
-		E849007A2A8E45D5005FA462 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		E849007C2A8E4B8E005FA462 /* ReadUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadUser.swift; sourceTree = "<group>"; };
 		E849007F2A8E4E89005FA462 /* GameHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryView.swift; sourceTree = "<group>"; };
 		E8921D0A2A90D3F1006D1A51 /* HowToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToView.swift; sourceTree = "<group>"; };
+		E89AF6F72AA81A6800D3B5AF /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
+		E89AF6FB2AA832DC00D3B5AF /* MainTextModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextModifer.swift; sourceTree = "<group>"; };
+		E89AF6FD2AA857F300D3B5AF /* AddUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUser.swift; sourceTree = "<group>"; };
+		E89AF6FF2AA87C6500D3B5AF /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		E89AF7022AA87D2600D3B5AF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E89AF7052AA87DA300D3B5AF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		E89AF7072AA87E1600D3B5AF /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		E89AF70A2AA881C500D3B5AF /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		E89AF70D2AA882DA00D3B5AF /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		E89AF70F2AA882F400D3B5AF /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		E89AF7122AA8833800D3B5AF /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		E89AF7152AA883D400D3B5AF /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		E89AF7182AA88C5600D3B5AF /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		E89AF71A2AA88CA100D3B5AF /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		E8A3DD902A905A4100615B15 /* MenuButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtons.swift; sourceTree = "<group>"; };
+		E8B0735E2AA70F80004BE4F6 /* SwitchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchUser.swift; sourceTree = "<group>"; };
+		E8B073602AA72066004BE4F6 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		E8B073622AA7276C004BE4F6 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		E8B073642AA7285D004BE4F6 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E8B073672AA751A3004BE4F6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		E8B46C3F2A905BE400D46070 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E8B46C412A90622000D46070 /* DifficultyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyDetailsView.swift; sourceTree = "<group>"; };
 		E8B46C432A90851200D46070 /* DifficultyButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyButtons.swift; sourceTree = "<group>"; };
@@ -80,20 +112,9 @@
 		E1D224902A8E0451008E60DC /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				E1D224912A8E07C1008E60DC /* users.json */,
 				E1D224932A8E07D5008E60DC /* User.swift */,
-				E849007C2A8E4B8E005FA462 /* ReadUser.swift */,
 			);
 			path = Users;
-			sourceTree = "<group>";
-		};
-		E1D224952A8E243B008E60DC /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				E84900782A8E456C005FA462 /* ChildView.swift */,
-				E849007A2A8E45D5005FA462 /* MainView.swift */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 		E1F8C1142A8CF4DB0014678A /* Helpers */ = {
@@ -101,6 +122,8 @@
 			children = (
 				E1F8C1122A8CF3950014678A /* CenterToolBarTitle.swift */,
 				E8A3DD902A905A4100615B15 /* MenuButtons.swift */,
+				E89AF6FB2AA832DC00D3B5AF /* MainTextModifer.swift */,
+				E89AF6FF2AA87C6500D3B5AF /* CardModifier.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -120,6 +143,7 @@
 			children = (
 				E1F8C11C2A8D0A4F0014678A /* achievements.json */,
 				E1F8C11E2A8D0A7D0014678A /* ReadAchievement.swift */,
+				E8B073602AA72066004BE4F6 /* Achievement.swift */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
@@ -127,8 +151,10 @@
 		E1FB20F72A8C86C700C5D93A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E89AF7042AA87D5400D3B5AF /* Card */,
 				E1D224902A8E0451008E60DC /* Users */,
 				E1F8C1192A8D010C0014678A /* Achievements */,
+				E8B073622AA7276C004BE4F6 /* Difficulty.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +174,66 @@
 				E8921D0A2A90D3F1006D1A51 /* HowToView.swift */,
 			);
 			path = "How To";
+			sourceTree = "<group>";
+		};
+		E89AF7012AA87CEF00D3B5AF /* UserReg */ = {
+			isa = PBXGroup;
+			children = (
+				E8B0735E2AA70F80004BE4F6 /* SwitchUser.swift */,
+				E89AF6F72AA81A6800D3B5AF /* NoItemView.swift */,
+				E89AF6FD2AA857F300D3B5AF /* AddUser.swift */,
+			);
+			path = UserReg;
+			sourceTree = "<group>";
+		};
+		E89AF7042AA87D5400D3B5AF /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				E89AF7052AA87DA300D3B5AF /* CardModel.swift */,
+				E89AF7072AA87E1600D3B5AF /* Cardify.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		E89AF70C2AA882C400D3B5AF /* GameStruct */ = {
+			isa = PBXGroup;
+			children = (
+				E89AF70D2AA882DA00D3B5AF /* Grid.swift */,
+				E89AF70F2AA882F400D3B5AF /* Array.swift */,
+				E89AF7122AA8833800D3B5AF /* Pie.swift */,
+			);
+			path = GameStruct;
+			sourceTree = "<group>";
+		};
+		E89AF7172AA88C3200D3B5AF /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E89AF7182AA88C5600D3B5AF /* MusicPlayer.swift */,
+				E89AF71A2AA88CA100D3B5AF /* Music.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		E8B0735D2AA70F60004BE4F6 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				E89AF70C2AA882C400D3B5AF /* GameStruct */,
+				E89AF7012AA87CEF00D3B5AF /* UserReg */,
+				E89AF7022AA87D2600D3B5AF /* CardView.swift */,
+				E8B073642AA7285D004BE4F6 /* GameView.swift */,
+				E89AF70A2AA881C500D3B5AF /* EndView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		E8B073662AA7518D004BE4F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E8B073672AA751A3004BE4F6 /* UserViewModel.swift */,
+				E1D224912A8E07C1008E60DC /* users.json */,
+				E89AF7152AA883D400D3B5AF /* GameViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E8B46C3E2A905BBC00D46070 /* Settings */ = {
@@ -180,7 +266,11 @@
 			isa = PBXGroup;
 			children = (
 				F731C80A2A8B163100E22489 /* Memory_GameApp.swift */,
+				E89AF7172AA88C3200D3B5AF /* Audio */,
+				E1FB20F72A8C86C700C5D93A /* Model */,
+				E8B073662AA7518D004BE4F6 /* ViewModel */,
 				F731C81C2A8B382800E22489 /* View */,
+				E1F8C1142A8CF4DB0014678A /* Helpers */,
 				F731C80E2A8B163300E22489 /* Assets.xcassets */,
 				F731C8102A8B163300E22489 /* Preview Content */,
 			);
@@ -198,13 +288,11 @@
 		F731C81C2A8B382800E22489 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E1D224952A8E243B008E60DC /* Example */,
 				F731C80C2A8B163100E22489 /* ContentView.swift */,
+				E8B0735D2AA70F60004BE4F6 /* Game */,
 				E8921D0C2A90D3FB006D1A51 /* How To */,
 				E8B46C3E2A905BBC00D46070 /* Settings */,
 				E1F8C1172A8D00B60014678A /* Leaderboard */,
-				E1F8C1142A8CF4DB0014678A /* Helpers */,
-				E1FB20F72A8C86C700C5D93A /* Model */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,23 +369,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B073682AA751A3004BE4F6 /* UserViewModel.swift in Sources */,
 				E8B46C402A905BE400D46070 /* SettingsView.swift in Sources */,
+				E89AF70E2AA882DA00D3B5AF /* Grid.swift in Sources */,
 				F731C80D2A8B163100E22489 /* ContentView.swift in Sources */,
-				E849007B2A8E45D5005FA462 /* MainView.swift in Sources */,
+				E8B073632AA7276C004BE4F6 /* Difficulty.swift in Sources */,
 				E1F8C1132A8CF3950014678A /* CenterToolBarTitle.swift in Sources */,
+				E89AF7062AA87DA300D3B5AF /* CardModel.swift in Sources */,
+				E89AF6FC2AA832DC00D3B5AF /* MainTextModifer.swift in Sources */,
+				E8B073612AA72066004BE4F6 /* Achievement.swift in Sources */,
+				E89AF71B2AA88CA100D3B5AF /* Music.swift in Sources */,
 				E1D2248D2A8DC5AE008E60DC /* AchievementView.swift in Sources */,
 				F731C81E2A8B384800E22489 /* Leaderboard.swift in Sources */,
+				E89AF7192AA88C5600D3B5AF /* MusicPlayer.swift in Sources */,
+				E89AF6FE2AA857F300D3B5AF /* AddUser.swift in Sources */,
 				E8B46C442A90851200D46070 /* DifficultyButtons.swift in Sources */,
-				E84900792A8E456C005FA462 /* ChildView.swift in Sources */,
+				E89AF7082AA87E1600D3B5AF /* Cardify.swift in Sources */,
 				E15A34832A8CC8DE003263D9 /* LeaderboardRow.swift in Sources */,
+				E8B073652AA7285D004BE4F6 /* GameView.swift in Sources */,
 				F731C80B2A8B163100E22489 /* Memory_GameApp.swift in Sources */,
+				E89AF7132AA8833800D3B5AF /* Pie.swift in Sources */,
+				E89AF7032AA87D2600D3B5AF /* CardView.swift in Sources */,
 				E8A3DD912A905A4100615B15 /* MenuButtons.swift in Sources */,
+				E89AF7162AA883D400D3B5AF /* GameViewModel.swift in Sources */,
 				E8B46C422A90622000D46070 /* DifficultyDetailsView.swift in Sources */,
 				E1F8C11F2A8D0A7D0014678A /* ReadAchievement.swift in Sources */,
+				E89AF7102AA882F400D3B5AF /* Array.swift in Sources */,
 				E84900802A8E4E89005FA462 /* GameHistoryView.swift in Sources */,
-				E849007D2A8E4B8E005FA462 /* ReadUser.swift in Sources */,
+				E89AF7002AA87C6500D3B5AF /* CardModifier.swift in Sources */,
+				E8B0735F2AA70F80004BE4F6 /* SwitchUser.swift in Sources */,
+				E89AF6F82AA81A6800D3B5AF /* NoItemView.swift in Sources */,
 				E1D2248F2A8DCCD3008E60DC /* AchievementRow.swift in Sources */,
 				E8921D0B2A90D3F1006D1A51 /* HowToView.swift in Sources */,
+				E89AF70B2AA881C500D3B5AF /* EndView.swift in Sources */,
 				E1D224942A8E07D5008E60DC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

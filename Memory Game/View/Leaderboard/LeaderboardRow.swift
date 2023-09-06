@@ -31,9 +31,9 @@ struct LeaderboardRow: View {
 struct LeaderboardRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LeaderboardRow(user: users[0])
+            LeaderboardRow(user: .init(id: 1, name: "Mac", gamesPlayed: 10, easyWins: 5, mediumWins: 3, hardWins: 1, totalWins: 9, winRatio: 0.9,currentScore: 0, highestScore: 200))
                 .previewLayout(.fixed(width: 200, height: 80))
-            LeaderboardRow(user: users[1])
+            LeaderboardRow(user: .init(id: 2, name: "Jill", gamesPlayed: 10, easyWins: 5, mediumWins: 1, hardWins: 1, totalWins: 7, winRatio: 0.7, currentScore: 0, highestScore: 130))
                 .previewLayout(.fixed(width: 200, height: 80))
         }
     }

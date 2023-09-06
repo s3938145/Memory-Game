@@ -9,8 +9,10 @@ import SwiftUI
 
 struct Leaderboard: View {
     
+    @StateObject var userVM = UserViewModel()
+    
     var sortedUsers : [User] {
-        return users.sorted(by: {$0.highestScore > $1.highestScore})
+        return userVM.users.sorted(by: {$0.highestScore > $1.highestScore})
     }
     
     var body: some View {
