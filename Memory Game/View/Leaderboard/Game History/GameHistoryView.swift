@@ -27,7 +27,7 @@ struct GameHistoryView: View {
                 }
                 .font(.system(size: 25))
                 ScrollView {
-//                    AchievementView(user: user.self)
+                    AchievementView(user: user.self)
                 }
             }
             .padding(.top, 180)

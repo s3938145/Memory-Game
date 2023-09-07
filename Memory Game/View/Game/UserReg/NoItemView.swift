@@ -13,7 +13,6 @@ struct NoItemView: View {
     
     var body: some View {
         ZStack {
-            AddUser(show: $show)
             ScrollView {
                 VStack(spacing: 10) {
                     Text("No user")
@@ -30,6 +29,7 @@ struct NoItemView: View {
                         .toggleStyle(.button)
                         .tint(.green)
                 }
+            AddUser(show: $show)
         }
     }
 }

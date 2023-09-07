@@ -2,69 +2,86 @@
 //  GameViewModel.swift
 //  Memory Game
 //
-//  Created by Binh Ngo on 06/09/2023.
+//  Created by Binh Ngo on 07/09/2023.
 //
 
 import SwiftUI
+import Combine
 
-import Foundation
-import SwiftUI
-
-//Game View Model
 class GameViewModel: ObservableObject {
-    //Initialize emojis and number of cards
-    @State var emojis = ["👻", "🍉", "🍤", "🧆", "🍑", "🍲", "🍱", "🍙", "🍌", "🥘"]
-    @Published var randomNumberOfPairs: Int
-
-    //Call Card model
-    @Published private var model: CardModel
+    @Published var playerScore: Int = 0
+    @Published var cpuScore: Int = 0
     
-    //Create an array of cards from Card model
-    var cards: Array<CardModel.Card> {
-        model.cards
+    @Published var playerCard: Int = 2
+    @Published var cpuCard : Int = 2
+    
+    @Published var finalScore: Int = 0
+    
+    @Published var difficulty: Difficulty
+    @Published var gameOver: Bool = false
+    @Published var playerWins: Bool = false
+    
+    var scoreLimit: Int {
+        Int(difficulty.rawValue)
     }
     
-    //Create the game
-    func createMemoryGame() {
-        self.model = CardModel(numberOfPairsOfCards: randomNumberOfPairs) {
-                pairIndex in emojis[pairIndex]
+    init(difficulty: Difficulty) {
+        self.difficulty = difficulty
+    }
+    
+    func getDifficulty() -> String {
+        switch self.difficulty {
+        case .easy:
+            return "Easy"
+        case .medium:
+            return "Medium"
+        case .hard:
+            return "Hard"
+        }
+    }
+    
+    func dealCards() {
+        self.playerCard = Int.random(in: 2...14)
+        switch self.difficulty {
+        case .easy:
+            self.cpuCard = Int.random(in: 2...10)
+            break
+        case .medium:
+            self.cpuCard = Int.random(in: 2...12)
+            break
+        case .hard:
+            self.cpuCard = Int.random(in: 2...14)
+        }
+    }
+    
+    func compareCard() {
+        if self.playerCard > self.cpuCard {
+            self.playerScore += 1
+        } else if self.playerCard < self.cpuCard {
+            self.cpuScore += 1
+        }
+        checkGameOver()
+    }
+    
+    func checkGameOver() {
+        if self.playerScore >= scoreLimit || self.cpuScore >= scoreLimit {
+            if self.playerScore >= scoreLimit {
+                self.playerWins = true
+                self.finalScore = self.playerScore
             }
-            
+            gameOver = true
+            resetGame()
+        } else {
+            gameOver = false
+        }
     }
     
-    //Initialize Game view model
-    init(emojis: [String] = ["👻", "🍉", "🍤", "🧆", "🍑", "🍲", "🍱", "🍙", "🍌", "🥘"], randomNumOfPairs: Int){
-        self.emojis = emojis
-        self.randomNumberOfPairs = randomNumOfPairs
-        self.model = CardModel(numberOfPairsOfCards: randomNumOfPairs) {
-                pairIndex in emojis[pairIndex]
-            }
     
+    func resetGame() {
+        self.playerScore = 0
+        self.cpuScore = 0
+        self.playerCard = 2
+        self.cpuCard = 2
     }
     
-    // MARK: -Intents
-    func choose(_ card: CardModel.Card) {
-        model.choose(card: card)
-    }
-    
-    //Shuffle call in Model
-    func shuffle() {
-        model.shuffle()
-    }
-    
-    //Restart call in model and shuffle
-    func restart() {
-        shuffle()
-        createMemoryGame()
-    }
-    
-    //Get score from model
-    func getScore() -> Int {
-        return model.getScore()
-    }
-    
-    //Check to find all of the cards has been matched
-    func getCheck() -> Int {
-        return model.getCheck()
-    }
 }

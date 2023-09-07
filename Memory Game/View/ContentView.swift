@@ -7,11 +7,8 @@
 
 import SwiftUI
 
-class Difficulty: ObservableObject {
-    @Published var currentDifficulty = "Easy"
-}
-
 struct ContentView: View {
+    
     @State var theColorScheme: ColorScheme = .dark
     @Environment(\.colorScheme) var colorScheme
     
@@ -52,7 +49,7 @@ struct ContentView: View {
                     .padding(.bottom, 60)
                     
                     //MARK: - App Name
-                    Text("Memory Match")
+                    Text("Card Wars")
                         .font(.system(size: 50, weight: .bold))
                         .italic()
                         .frame(maxWidth: .infinity)
@@ -62,29 +59,49 @@ struct ContentView: View {
                     NavigationLink(destination: SwitchUser()) {
                         Text("Play")
                     }
+                    .simultaneousGesture(TapGesture().onEnded{
+                        playSound(sound: "click", type: "wav")
+                    })
                     .buttonStyle(MenuButtons())
                     
                     //MARK: - Leaderboard Button
                     NavigationLink(destination: Leaderboard()) {
                         Text("Leaderboard")
                     }
-                    .buttonStyle(MenuButtons())
-                    
-                    //MARK: - How To Play Button
-                    NavigationLink(destination: Text("How To")) {
-                        Text("How To")
-                    }
+                    .simultaneousGesture(TapGesture().onEnded{
+                        playSound(sound: "click", type: "wav")
+                    })
                     .buttonStyle(MenuButtons())
                     
                     //MARK: - Settings Button
-                    NavigationLink(destination: SettingsView().environmentObject(Difficulty())) {
-                        Text("Settings")
+                    NavigationLink(destination: DifficultySelection().environmentObject(Settings())) {
+                        Text("Setting")
                     }
+                    .simultaneousGesture(TapGesture().onEnded{
+                        playSound(sound: "click", type: "wav")
+                    })
                     .buttonStyle(MenuButtons())
+                    
+                    //MARK: - Settings Button
+                    NavigationLink(destination: HowToView()) {
+                        Text("How To Play")
+                    }
+                    .simultaneousGesture(TapGesture().onEnded{
+                        playSound(sound: "click", type: "wav")
+                    })
+                    .buttonStyle(MenuButtons())
+                    
                     Spacer()
+                }
+                .onAppear() {
+                    MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "Snowfall")
+                }
+                .onDisappear() {
+                    MusicPlayer.shared.stopBackgroundMusic()
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

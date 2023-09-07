@@ -2,15 +2,14 @@
 //  MusicPlayer.swift
 //  Memory Game
 //
-//  Created by Binh Ngo on 06/09/2023.
+//  Created by Binh Ngo on 07/09/2023.
 //
-// https://stackoverflow.com/questions/34600644/creating-music-instance-in-every-view-controller
-
+//  1. https://stackoverflow.com/questions/34600644/creating-music-instance-in-every-view-controller
 
 import Foundation
 import AVFoundation
 
-//Use class here to create a singleton for the music not passing to another view
+
 class MusicPlayer {
     static let shared = MusicPlayer()
     var audioPlayer: AVAudioPlayer?

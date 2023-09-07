@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Memory_GameApp: App {
+    @StateObject private var userSettings = Settings()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if let difficulty = userSettings.difficulty {
+                ContentView().environmentObject(userSettings)
+            } else {
+                DifficultySelection().environmentObject(userSettings)
+            }
         }
     }
 }

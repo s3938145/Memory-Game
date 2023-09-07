@@ -42,30 +42,3 @@ struct DifficultyButtonStyle: ButtonStyle {
     }
 }
 
-struct GameButton: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .padding(10)
-            .frame(width: 150)
-            .background(Color(.red))
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color(.green), lineWidth: 5)
-            )
-            .padding(5)
-    }
-}
-
-struct FunctionButton: ViewModifier {
-    var color: Color
-    func body(content: Content) -> some View {
-        content
-            .padding(10)
-            .frame(width: 150)
-            .background(color)
-            .foregroundColor(.primary)
-            .cornerRadius(10)
-    }
-}

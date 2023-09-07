@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct SwitchUser: View {
+    
     @State private var name: String = ""
     @State var show: Bool = false
     @StateObject private var userVM = UserViewModel()
+    @StateObject private var userSettings = Settings()
+    
     var body: some View {
         ZStack {
             if (userVM.users.isEmpty) {
@@ -19,16 +22,19 @@ struct SwitchUser: View {
                 }
             } else {
                 ZStack {
-                    List(userVM.users.sorted(by: {$0.name < $1.name})) {user in
+                    List(self.userVM.users.sorted(by: {$0.name < $1.name})) {user in
                         NavigationLink{
-                            GameView(currentUser: user)
+                            if let difficulty = userSettings.difficulty {
+                                GameView(currentUser: user, gameViewModel: GameViewModel(difficulty: difficulty)).environmentObject(userSettings)
+                            }
+                               
                         } label: {
                             LeaderboardRow(user: user)
                         }
                     }
                     AddUser(show: $show)
                 }
-                .modifier(CenterToolBarTitle(text: "Select User"))
+                .modifier(CenterToolBarTitle(text: "User"))
                 .toolbar {
                     Toggle("Add User", isOn: $show)
                         .toggleStyle(.button)

@@ -19,10 +19,6 @@ class UserViewModel: ObservableObject {
         loadUserData()
     }
     
-    func updateView(){
-        self.objectWillChange.send()
-    }
-    
     func addUser(name:String) {
         let user = User(id: users.count + 1, name: name, gamesPlayed: 0, easyWins: 0, mediumWins: 0, hardWins: 0, totalWins: 0, winRatio: 0, currentScore: 0, highestScore: 0)
         users.append(user)
@@ -58,7 +54,7 @@ class UserViewModel: ObservableObject {
     func updateLosses(user: User) {
         if let i = users.firstIndex(where: {$0.id == user.id}) {
             users[i].gamesPlayed += 1
-            users[i].winRatio = Double(users[i].totalWins / users[i].gamesPlayed)
+            users[i].winRatio = Double(Double(users[i].totalWins) / Double(users[i].gamesPlayed))
         }
     }
     
@@ -72,6 +68,7 @@ class UserViewModel: ObservableObject {
         if let i = users.firstIndex(where: {$0.id == user.id}) {
             users[i].currentScore = score
         }
+        updateHighScore(user: user)
     }
     
     func updateHighScore(user: User) {

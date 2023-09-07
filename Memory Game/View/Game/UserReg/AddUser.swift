@@ -24,7 +24,6 @@ struct AddUser: View {
                     VStack {
                         Text("Register")
                             .fontWeight(.semibold)
-                            .modifier(TextModifier())
                         HStack {
                             Text("User Name: ")
                             TextField("Enter your user name",
@@ -40,10 +39,12 @@ struct AddUser: View {
                                 alertMessage = "User name must not be empty"
                             } else {
                                 userVM.addUser(name: name)
-                                alertMessage = ("\(name) registered")
-                                show = false
+                                alertMessage = ("\(name) registered, return to Main Menu then back here for new user to show up")
                             }
                         }
+                        .simultaneousGesture(TapGesture().onEnded{
+                            playSound(sound: "click", type: "wav")
+                        })
                         .buttonStyle(SubMenuButton())
                         .padding(7)
                         .alert(isPresented: $showingAlert, content: {

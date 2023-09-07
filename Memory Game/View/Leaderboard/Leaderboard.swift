@@ -24,6 +24,12 @@ struct Leaderboard: View {
             }
         }
         .modifier(CenterToolBarTitle(text: "Leaderboard"))
+        .onAppear() {
+            MusicPlayer.shared.startBackgroundMusic(backgroundMusicFileName: "Dreamland")
+        }
+        .onDisappear() {
+            MusicPlayer.shared.stopBackgroundMusic()
+        }
     }
 }
 
