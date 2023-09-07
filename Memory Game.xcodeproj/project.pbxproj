@@ -15,6 +15,7 @@
 		E1F8C11D2A8D0A4F0014678A /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F8C11C2A8D0A4F0014678A /* achievements.json */; };
 		E84900802A8E4E89005FA462 /* GameHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E849007F2A8E4E89005FA462 /* GameHistoryView.swift */; };
 		E8921D0B2A90D3F1006D1A51 /* HowToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8921D0A2A90D3F1006D1A51 /* HowToView.swift */; };
+		E899C50C2AAA277F00E7A0EC /* iOS Development - Assignment 2 - s3938145 -Report.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E899C50B2AAA277F00E7A0EC /* iOS Development - Assignment 2 - s3938145 -Report.pdf */; };
 		E89AF6F82AA81A6800D3B5AF /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF6F72AA81A6800D3B5AF /* NoItemView.swift */; };
 		E89AF6FE2AA857F300D3B5AF /* AddUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AF6FD2AA857F300D3B5AF /* AddUser.swift */; };
 		E89D30372AA961F400474649 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D30362AA961F400474649 /* GameViewModel.swift */; };
@@ -55,6 +56,7 @@
 		E1F8C11C2A8D0A4F0014678A /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
 		E849007F2A8E4E89005FA462 /* GameHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryView.swift; sourceTree = "<group>"; };
 		E8921D0A2A90D3F1006D1A51 /* HowToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToView.swift; sourceTree = "<group>"; };
+		E899C50B2AAA277F00E7A0EC /* iOS Development - Assignment 2 - s3938145 -Report.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "iOS Development - Assignment 2 - s3938145 -Report.pdf"; sourceTree = "<group>"; };
 		E89AF6F72AA81A6800D3B5AF /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
 		E89AF6FD2AA857F300D3B5AF /* AddUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUser.swift; sourceTree = "<group>"; };
 		E89D30362AA961F400474649 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		F731C8092A8B163100E22489 /* Memory Game */ = {
 			isa = PBXGroup;
 			children = (
+				E899C50B2AAA277F00E7A0EC /* iOS Development - Assignment 2 - s3938145 -Report.pdf */,
 				E8F329B62AA9CAD40055AC50 /* Audio */,
 				E8BD7E952AA8B220005CD59C /* Game */,
 				F731C80A2A8B163100E22489 /* Memory_GameApp.swift */,
@@ -374,6 +377,7 @@
 				E8F329CD2AA9D7800055AC50 /* Allegro.mp3 in Resources */,
 				F731C8122A8B163300E22489 /* Preview Assets.xcassets in Resources */,
 				E1F8C11D2A8D0A4F0014678A /* achievements.json in Resources */,
+				E899C50C2AAA277F00E7A0EC /* iOS Development - Assignment 2 - s3938145 -Report.pdf in Resources */,
 				E8F329C02AA9D44C0055AC50 /* cardShuffle.mp3 in Resources */,
 				E8F329CC2AA9D7800055AC50 /* Snowfall.mp3 in Resources */,
 				F731C80F2A8B163300E22489 /* Assets.xcassets in Resources */,

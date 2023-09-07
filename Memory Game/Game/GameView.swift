@@ -1,10 +1,16 @@
-//
-//  GameView.swift
-//  Memory Game
-//
-//  Created by Binh Ngo on 06/09/2023.
-//
-//1. https://codewithchris.com/first-swiftui-app-tutorial/
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 2
+  Author: Ngo Chi Binh
+  ID: s3938145
+  Created  date: 15/08/2023
+  Last modified: 07/09/2023
+  Acknowledgement: N/A
+    1. https://codewithchris.com/first-swiftui-app-tutorial/
+*/
+
 
 import SwiftUI
 
